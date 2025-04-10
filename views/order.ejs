@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Esporta Ordini</title>
+    </head>
+    <body>
+        <h2>Filtra ed Esporta Ordini WooCommerce</h2>
+        <form method="get" action="/export">
+            <label>Da: <input type="date" name="from" /></label>
+            <label>A: <input type="date" name="to" /></label>
+            <select name="format">
+                <option value="csv">CSV</option>
+                <option value="xls">XLS</option>
+            </select>
+            <button type="submit">Esporta</button>
+        </form>
+    </body>
+</html>
